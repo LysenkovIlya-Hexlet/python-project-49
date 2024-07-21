@@ -18,4 +18,9 @@ https://asciinema.org/a/cX0wKWKnAgYhzI4X1GNkkFJWF
 [![asciicast](https://asciinema.org/a/cX0wKWKnAgYhzI4X1GNkkFJWF)]
 
 ## Аскинема с примером верных и неверных ответов (brain-gcd)
+Установите игру с помощью pip install brain-gcd
 [![asciicast](https://asciinema.org/a/io8Uq36iCGZ76TnUatmy5f0Oe)]
+
+## Аскинема с примером верных и неверных ответов (brain-progression)
+Установите игру с помощью pip install brain-progression
+[![asciicast](https://asciinema.org/a/1q5vx7lDKAhdvLT3dJKZpS6rH]
