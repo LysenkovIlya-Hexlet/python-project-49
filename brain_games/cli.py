@@ -6,3 +6,6 @@ def welcome_user(game_intro):
     print(f'Hello, {name}!')
     print(game_intro)
     return name
+def ask_question(question: str) -> str:
+    print(question)
+    return input('Your answer: ')
