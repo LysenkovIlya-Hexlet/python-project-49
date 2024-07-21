@@ -24,3 +24,7 @@ https://asciinema.org/a/cX0wKWKnAgYhzI4X1GNkkFJWF
 ## Аскинема с примером верных и неверных ответов (brain-progression)
 Установите игру с помощью pip install brain-progression
 [![asciicast](https://asciinema.org/a/1q5vx7lDKAhdvLT3dJKZpS6rH]
+
+## Аскинема с примером верных и неверных ответов (brain-prime)
+Установите игру с помощью pip install brain-prime
+[![asciicast](https://asciinema.org/a/IhcmlEKL4eNc4LdkN71kYyoSa]
