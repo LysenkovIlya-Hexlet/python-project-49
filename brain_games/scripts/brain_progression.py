@@ -1,6 +1,8 @@
 import random
 from brain_games.cli import welcome_user, ask_question
 
+DESCRIPTION = 'What number is missing in the progression?'
+
 def generate_question_and_answer():
     progression_length = random.randint(5, 10)  # Длина прогрессии от 5 до 10
     start = random.randint(1, 20)  # Начальное число прогрессии
@@ -15,7 +17,10 @@ def generate_question_and_answer():
     return question, str(missing_number)
 
 def main():
-    name = welcome_user('What number is missing in the progression?')
+    print(DESCRIPTION)
+    
+    name = welcome_user(DESCRIPTION)
+    
     for _ in range(3):
         question, correct_answer = generate_question_and_answer()
         user_answer = ask_question(question)
@@ -26,6 +31,7 @@ def main():
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {name}!")
             return
+    
     print(f'Congratulations, {name}!')
 
 if __name__ == '__main__':
