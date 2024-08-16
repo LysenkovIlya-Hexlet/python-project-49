@@ -13,6 +13,7 @@ def generate_question_and_answer():
     return question, answer
 
 def main():
+    print(DESCRIPTION)
     play_game(generate_question_and_answer)
 
 if __name__ == '__main__':
