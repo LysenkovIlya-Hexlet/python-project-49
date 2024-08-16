@@ -1,5 +1,4 @@
 import random
-import prompt
 from brain_games.cli import welcome_user, ask_question
 
 def is_prime(number: int) -> bool:
@@ -26,7 +25,8 @@ def generate_question_and_answer():
 
 def main():
     """Run the prime number game."""
-    welcome_user('Answer "yes" if given number is prime. Otherwise answer "no".')
+    name = welcome_user('Answer "yes" if given number is prime. Otherwise answer "no".')
+    
     for _ in range(3):
         question, correct_answer = generate_question_and_answer()
         user_answer = ask_question(f'Question: {question}')
@@ -35,9 +35,10 @@ def main():
             print('Correct!')
         else:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            print(f"Let's try again!")
+            print(f"Let's try again, {name}!")
             return
- print(f'Congratulations, {name}!')
+    
+    print(f'Congratulations, {name}!')
 
 if __name__ == '__main__':
     main()
