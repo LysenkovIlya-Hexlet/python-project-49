@@ -30,10 +30,10 @@ def main():
             print('Correct!')
         else:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            print(f"Let's try again, {name}!")
+            print(f"Let's try again, {user_name}!")
             return
     
-    print(f'Congratulations, {name}!')
+    print(f'Congratulations, {user_name}!')
 
 if __name__ == '__main__':
     main()
