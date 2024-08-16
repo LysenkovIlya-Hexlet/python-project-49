@@ -23,20 +23,23 @@ def main():
     print("In the main function...")
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    
+
     for _ in range(3):
         user_answer, correct_answer = ask_question()
-        
+
         if user_answer != correct_answer:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(
+                f"'{user_answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct_answer}'."
+            )
             print(f"Let's try again, {name}!")
             return
-        
+
         print("Correct!")
-    
+
     print(f"Congratulations, {name}!")
 
 
 if __name__ == "__main__":
     main()
-
+    

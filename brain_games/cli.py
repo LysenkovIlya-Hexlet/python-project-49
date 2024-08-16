@@ -1,6 +1,3 @@
-import prompt
-
-
 def welcome_user(game_intro: str) -> str:
     """Print the game introduction and ask for the user's name."""
     print(game_intro)
@@ -14,3 +11,4 @@ def ask_question(question: str) -> str:
     """Ask the user a question and return their answer."""
     print(question)
     return input('Your answer: ')
+
