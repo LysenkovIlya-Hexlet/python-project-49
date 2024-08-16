@@ -1,6 +1,7 @@
 import random
 from brain_games.cli import welcome_user, ask_question
 
+
 def is_prime(number: int) -> bool:
     """Check if a number is a prime number."""
     if number <= 1:
@@ -16,12 +17,14 @@ def is_prime(number: int) -> bool:
         i += 6
     return True
 
+
 def generate_question_and_answer():
     """Generate a question and its answer for the game."""
     number = random.randint(1, 100)
     correct_answer = 'yes' if is_prime(number) else 'no'
     question = str(number)
     return question, correct_answer
+
 
 def main():
     """Run the prime number game."""
@@ -46,6 +49,7 @@ def main():
             return
 
     print(f'Congratulations, {name}!')
+
 
 if __name__ == '__main__':
     main()

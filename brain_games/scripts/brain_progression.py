@@ -1,7 +1,9 @@
 import random
 from brain_games.cli import welcome_user, ask_question
 
+
 DESCRIPTION = 'What number is missing in the progression?'
+
 
 def generate_question_and_answer():
     """Generate a question and its answer for the game."""
@@ -18,6 +20,7 @@ def generate_question_and_answer():
 
     question = ' '.join(map(str, progression))
     return question, str(missing_number)
+
 
 def main():
     """Run the progression game."""
@@ -41,6 +44,7 @@ def main():
             return
 
     print(f'Congratulations, {name}!')
+
 
 if __name__ == '__main__':
     main()

@@ -11,4 +11,3 @@ def ask_question(question: str) -> str:
     """Ask the user a question and return their answer."""
     print(question)
     return input('Your answer: ')
-
