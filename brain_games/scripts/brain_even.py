@@ -1,20 +1,26 @@
 import random
 
+
 def welcome_user():
-    print("Welcome to the Brain Games!")  # Отладочное сообщение
+    """Welcome the user and return their name."""
+    print("Welcome to the Brain Games!")
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
     return name
 
+
 def ask_question():
+    """Ask a question and return the user's answer and the correct answer."""
     number = random.randint(1, 100)
     correct_answer = 'yes' if number % 2 == 0 else 'no'
     print(f"Question: {number}")
     user_answer = input("Your answer: ").strip().lower()
     return user_answer, correct_answer
 
+
 def main():
-    print("In the main function...")  # Отладочное сообщение
+    """Run the main game loop."""
+    print("In the main function...")
     name = welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     
@@ -30,5 +36,7 @@ def main():
     
     print(f"Congratulations, {name}!")
 
+
 if __name__ == "__main__":
     main()
+
